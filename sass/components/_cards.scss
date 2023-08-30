@@ -1,0 +1,408 @@
+.services {
+  &__card {
+    background: linear-gradient(
+      -5deg,
+      $color-orange-light 50%,
+      $color-orange-dark 50.2%
+    );
+    border-radius: 3px;
+    width: 25%;
+    max-width: 34.375rem;
+    height: 45rem;
+    text-align: center;
+    padding: 2rem 3rem 5rem 3rem;
+    box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @include respond(1500) {
+      width: 27%;
+    }
+
+    @include respond(1100) {
+      width: 30%;
+    }
+
+    @include respond(900) {
+      width: 80%;
+      max-width: 45rem;
+    }
+
+    @include respond(500) {
+      width: 100%;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem);
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__card-icon {
+    width: 8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__card-heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    word-spacing: 0.3rem;
+  }
+  &__card-bottom {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    left: 10%;
+
+    @include respond(900) {
+      top: 60%;
+    }
+  }
+}
+
+.pricing {
+  &__card {
+    background: linear-gradient(
+      -51deg,
+      $color-white 42%,
+      $color-orange-dark 42.2%
+    );
+
+    border-radius: 0.5rem;
+    box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    backface-visibility: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-10%) scale(1.03);
+      box-shadow: 0rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.gym {
+  &__card {
+    &-day-pass {
+      width: 35rem;
+      height: 5rem;
+      margin-bottom: 4rem;
+
+      @include respond(1200) {
+        width: 40rem;
+        height: 6rem;
+      }
+    }
+
+    &-subscription {
+      width: 45rem;
+      height: 12rem;
+
+      @include respond(1200) {
+        width: 46rem;
+        height: 13.5rem;
+      }
+
+      @include respond(800) {
+        width: 75%;
+      }
+
+      @include respond(500) {
+        width: 92.5%;
+      }
+
+      &--left-side {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &-text {
+      margin-left: 2.25rem;
+      margin-right: 0.5rem;
+
+      @include respond(800) {
+        margin-left: 8rem;
+      }
+
+      @include respond(700) {
+        margin-left: 6rem;
+      }
+
+      @include respond(500) {
+        margin-left: 2.5rem;
+      }
+
+      &--day {
+        margin-left: 2.75rem;
+      }
+
+      &--24 {
+        margin-left: 5rem;
+
+        @include respond(800) {
+          margin-left: 10rem;
+        }
+        @include respond(700) {
+          margin-left: 8rem;
+        }
+        @include respond(500) {
+          margin-left: 4rem;
+        }
+      }
+    }
+
+    &-number {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out, right 0.4s ease-in-out;
+
+      &--hidden {
+        opacity: 0;
+        right: 5%;
+      }
+
+      @include respond(800) {
+        right: 7%;
+
+        &--hidden {
+          right: 5%;
+        }
+      }
+    }
+
+    &-number--day {
+      margin-right: 5rem;
+    }
+  }
+}
+
+.pt,
+.massage {
+  &__card {
+    background: linear-gradient(
+      -51deg,
+      $color-white 34%,
+      $color-orange-dark 34.2%
+    );
+    width: 45rem;
+    height: 8rem;
+
+    @include respond(1200) {
+      width: 46rem;
+      height: 9.5rem;
+    }
+
+    @include respond(800) {
+      width: 66%;
+      height: 9.5rem;
+    }
+
+    @include respond(500) {
+      width: 92.5%;
+    }
+
+    &:hover {
+      transform: translateY(-10%) scale(1.03);
+      box-shadow: 0rem 1.5rem 1.5rem rgba(0, 0, 0, 0.2);
+      // background: linear-gradient(
+      //   -51deg,
+      //   $color-orange-medium-light-darken 34%,
+      //   $color-orange-medium-shade-1 34.2%
+      // );
+    }
+
+    &-text {
+      margin-left: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    &-number {
+      margin-right: 2rem;
+      margin-left: 4rem;
+    }
+  }
+}
+
+.contact {
+  &__wrapper {
+    border-radius: 5px;
+    background: linear-gradient(
+      -70deg,
+      $color-white 62%,
+      $color-orange-dark 62.1%
+    );
+    width: 65%;
+    max-width: 125rem;
+    height: 50rem;
+    box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(1500) {
+      width: 75%;
+      height: 57.5rem;
+    }
+
+    @include respond(1400) {
+      width: 87.5%;
+      height: 62.5rem;
+    }
+
+    @include respond(1200) {
+      width: 95%;
+      background: linear-gradient(
+        -80deg,
+        $color-white 62%,
+        $color-orange-dark 62.2%
+      );
+    }
+    @include respond(1100) {
+      width: 95%;
+      height: 80rem;
+      background: linear-gradient(
+        -5deg,
+        $color-white 71%,
+        $color-orange-dark 71.2%
+      );
+    }
+
+    @include respond(450) {
+      height: 85rem;
+      background: linear-gradient(
+        -5deg,
+        $color-white 60.5%,
+        $color-orange-dark 60.7%
+      );
+    }
+  }
+
+  &__info {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(1700) {
+      width: 95%;
+      height: 92.5%;
+    }
+
+    @include respond(1100) {
+      flex-direction: column;
+    }
+
+    &--right {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      @include respond(1200) {
+        width: 65%;
+      }
+
+      @include respond(1100) {
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+      }
+
+      @include respond(450) {
+        height: 58%;
+      }
+    }
+
+    &--left {
+      @include respond(1100) {
+        width: 95%;
+      }
+    }
+  }
+
+  &__hour-address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include respond(1100) {
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-evenly;
+    }
+
+    @include respond(450) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__phone-email-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include respond(1100) {
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-evenly;
+    }
+
+    @include respond(600) {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    @include respond(450) {
+      gap: 2rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(1100) {
+      flex-direction: row;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+
+    @include respond(800) {
+      margin-top: 0;
+      gap: 4rem;
+    }
+
+    @include respond(600) {
+      gap: 1rem;
+    }
+  }
+
+
+
+  &__map {
+    width: 90%;
+    height: 100%;
+    border-style: none;
+    border-radius: 3px;
+
+    @include respond(500) {
+      width: 100%;
+    }
+  }
+}

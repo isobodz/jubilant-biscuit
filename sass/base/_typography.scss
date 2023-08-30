@@ -1,0 +1,238 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-black;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+
+  @include respond(950) {
+    font-size: 2.7rem;
+  }
+
+  @include respond(800) {
+    font-size: 3rem;
+  }
+
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.services {
+  &__card-heading {
+    font-size: 2.5rem;
+  }
+  @include respond(900) {
+    &__text {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.main-header {
+  font-size: 4.2rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  color: $color-orange-dark;
+  -webkit-text-stroke: 0.05rem;
+  text-align: center;
+}
+
+.header {
+  &__name {
+    font-size: 18rem;
+    letter-spacing: 3rem;
+    text-indent: 3rem;
+    font-weight: 900;
+    -webkit-text-stroke: 0.4rem;
+    -webkit-text-stroke-color: black;
+
+    @include respond(900) {
+      font-size: 16rem;
+      letter-spacing: 2.5rem;
+      text-indent: 2.5rem;
+    }
+
+    @include respond(800) {
+      font-size: 12rem;
+      letter-spacing: 2rem;
+      text-indent: 2rem;
+    }
+
+    @include respond(600) {
+      font-size: 10rem;
+    }
+
+    @include respond(500) {
+      font-size: 8rem;
+      letter-spacing: 1.75rem;
+      text-indent: 1.75rem;
+    }
+
+    @include respond(350) {
+      font-size: 7rem;
+    }
+  }
+}
+
+.nav-bar {
+  font-weight: 900;
+  font-size: 3.2rem;
+
+  @include respond(1000) {
+    font-size: 2.8rem;
+  }
+}
+
+.pricing {
+  &__sub-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  &__card {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  @include respond(1400) {
+  &__tab-titles {
+    font-size: 3.5rem;
+  }
+  }
+
+  @include respond(800) {
+    &__tab-titles {
+      font-size: 3rem;
+    }
+  }
+  @include respond(500) {
+    &__tab-titles {
+      font-size: 2.5rem;
+    }
+  }
+  @include respond(400) {
+    &__tab-titles {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.gym {
+  &__title {
+    &--sub-text {
+      font-size: 2.8rem;
+      font-style: italic;
+    }
+  }
+
+  &__card {
+    &-text {
+      font-size: 3.2rem;
+      font-weight: 700;
+
+      &--day {
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        @include respond(1200) {
+          font-size: 2rem;
+        }
+      }
+
+      &--time {
+        font-size: 1.3rem;
+        color: $color-grey;
+
+        @include respond(900) {
+          font-size: 1.4remm;
+        }
+      }
+
+      &--24 {
+        font-size: 4rem;
+        font-weight: 900;
+      }
+    }
+
+    &-number {
+      font-size: 3.5rem;
+      font-weight: 900;
+
+      &--day {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+    }
+
+    &-monthly {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.pt,
+.massage {
+  &__quaternary-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: $color-grey;
+  }
+
+  &__card {
+    &-text {
+      font-size: 2.1rem;
+    }
+    &-number {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.radio-btn__label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact {
+  &__text {
+    @include respond(1100) {
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  &__contact-text {
+    color: $color-orange-dark;
+  }
+
+  &__builder {
+    font-size: 1.2rem;
+    color: $color-orange-dark;
+
+    &-href {
+      &:link,
+      &:visited {
+        text-transform: none;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: underline;
+      font-size: 1.2rem;
+    }
+  }
+}

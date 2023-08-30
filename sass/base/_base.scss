@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+*:link,
+*:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-orange-dark;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @include respond(1200) {
+    font-size: 56.25% ;
+  }
+
+  @include respond(900) {
+    font-size: 50%;
+  }
+
+  @include respond(400) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  min-width: 320px;
+  overflow-x: auto;
+  // background-color: #f9f9f9;
+  // background-color: rgba($color-orange-light, 0.5);
+}
+
+
+::selection {
+  background-color: rgba($color-black, 0.975);
+  color: $color-orange-medium;
+}

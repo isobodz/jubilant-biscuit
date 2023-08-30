@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Isobodz gym</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favion/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__video">
+        <video class="header__video-content" autoplay loop muted>
+          <source src="img/hero-large.mp4" type="video/mp4" />
+          <source src="img/hero-large.webm" type="video/webm" />
+          Video browser is not supported.
+        </video>
+      </div>
+      <div class="header__name">isobodz</div>
+    </header>
+
+    <nav class="nav-bar">
+      <input type="checkbox" class="nav-bar__checkbox" id="checkbox-toggle" />
+      <label for="checkbox-toggle" class="nav-bar__button">
+        <span class="nav-bar__icon">&nbsp;</span>
+      </label>
+      <div class="nav-bar__pop-background">&nbsp;</div>
+
+      <div class="nav-bar__links-wrapper">
+        <ul class="nav-bar__links">
+          <li class="nav-bar__link">
+            <div class="nav-bar__link-inner">
+              <a href="#about-us" class="btn btn--nav">About us</a>
+            </div>
+          </li>
+          <li class="nav-bar__link">
+            <div class="nav-bar__link-inner">
+              <a href="#services" class="btn btn--nav">Services</a>
+            </div>
+          </li>
+          <li class="nav-bar__link">
+            <div class="nav-bar__link-inner">
+              <a href="#gallery" class="btn btn--nav">Gallery</a>
+            </div>
+          </li>
+          <li class="nav-bar__link">
+            <div class="nav-bar__link-inner">
+              <a href="#pricing" class="btn btn--nav">Pricing</a>
+            </div>
+          </li>
+          <li class="nav-bar__link">
+            <div class="nav-bar__link-inner">
+              <a href="#contact" class="btn btn--nav">Find us</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="about-us" id="about-us">
+      <h1 class="about-us__main-header main-header">
+        Strength, Community, and Health: Welcome to Wakefield's Isobodz Gym!
+      </h1>
+      <h2 class="about-us__secondary-header">
+        Whether you're taking your first steps into the gym or are seasoned
+        bodybuilder, our doors are open to everyone.
+      </h2>
+      <div class="about-us__details">
+        <div class="about-us__section-one about-us__section">
+          <h3 class="heading-tertiary about-us__title">For Women</h3>
+          <p>
+            We believe fitness should be accessible and unintimidating. Our
+            supportive environment and tailored programs empower women to
+            embrace strength and confidence.
+          </p>
+        </div>
+        <div class="about-us__section-two about-us__section">
+          <h3 class="heading-tertiary about-us__title">
+            For Bodybuilders/Powerlifters
+          </h3>
+          <p>
+            Equipped with free weights, dumbbells, and all essential machines,
+            our gym is a heaven for those seeking to push their limits.
+          </p>
+        </div>
+        <div class="about-us__section about-us__section-three">
+          <h3 class="heading-tertiary about-us__title">
+            For General Fitness Enthusiasts
+          </h3>
+          <p>
+            From yoga spaces to boxing bags and strongman tires, we offer a
+            diverse range of facilities to suit every fitness journey.
+          </p>
+        </div>
+      </div>
+      <p class="about-us__final-statement">
+        Ready to join our fitness family? Contact us or drop by for a tour. Your
+        journey to strength and wellness starts here.
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="services__title main-header">Our Services</h2>
+      <div class="services__styling-rectangle"></div>
+      <div class="services__cards">
+        <div class="services__card services__card--pt-nutrition">
+          <div class="services__card-top">
+            <img
+              src="img/svg-notes.svg"
+              alt="PT and Nutrition"
+              class="services__card-icon"
+            />
+            <h3 class="services__card-heading heading-tertiary">
+              PT and Nutrition Advice
+            </h3>
+          </div>
+          <p class="services__text services__card-bottom">
+            Our PT and nutrition advice is more than a workout plan; it's a
+            roadmap to success. Catering to women's unique needs, we provide the
+            tools and encouragement to thrive.
+          </p>
+        </div>
+        <div class="services__card services__card--gym">
+          <div class="services__card-top">
+            <img
+              src="img/svg-gym.svg"
+              alt="PT and Nutrition"
+              class="services__card-icon"
+            />
+            <h3 class="services__card-heading heading-tertiary">
+              Gym amenities
+            </h3>
+          </div>
+          <p class="services__text services__card-bottom">
+            Explore our gym's wide array of equipment and facilities. With
+            options for off-peak, regular, and 24/7 access, we provide the
+            flexibility and community to fuel your fitness passion.
+          </p>
+        </div>
+        <div class="services__card services__card--massage">
+          <div class="services__card-top">
+            <img
+              src="img/svg-massage.svg"
+              alt="PT and Nutrition"
+              class="services__card-icon"
+            />
+            <h3 class="services__card-heading heading-tertiary">
+              Deep-Tissue Massage
+            </h3>
+          </div>
+
+          <p class="services__text services__card-bottom">
+            Revitalize your body with deep-tissue massage therapy, tailored to
+            your individual needs. Whether you're an athlete or seeking
+            relaxation, we're here to support your wellness journey.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2 class="gallery__title main-header">Gallery</h2>
+      <div class="gallery__carousel-wrapper">
+        <div class="carousel" carousel-slide-control>
+          <button
+            class="carousel__button--next carousel__button"
+            carousel-button="next"
+          >
+            <img
+              src="img/svg-right.svg"
+              alt="Right arrow for image carousel"
+              class="carousel__svg carousel__svg--next"
+            />
+          </button>
+
+          <button
+            class="carousel__button--prev carousel__button"
+            carousel-button="prev"
+          >
+            <img
+              src="img/svg-left.svg"
+              alt="Left arrow for image carousel"
+              class="carousel__svg carousel__svg--prev"
+            />
+          </button>
+          <ul class="carousel__images" carousel-slides>
+            <li class="carousel__slide" active-slide>
+              <img
+                src="img/carousel-1.jpg"
+                alt="Gym equipment"
+                class="carousel__image"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                src="img/carousel-2.jpg"
+                alt="Gym equipment"
+                class="carousel__image"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                src="img/carousel-3.jpg"
+                alt="Gym equipment"
+                class="carousel__image"
+              />
+            </li>
+            <li class="carousel__slide">
+              <img
+                src="img/carousel-4.jpg"
+                alt="Gym equipment"
+                class="carousel__image"
+              />
+            </li>
+          </ul>
+          <div class="carousel__indicators">
+            <span class="carousel__dot" data-dot="0"></span>
+            <span class="carousel__dot" data-dot="1"></span>
+            <span class="carousel__dot" data-dot="2"></span>
+            <span class="carousel__dot" data-dot="3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2 class="pricing__title main-header">Pricing</h2>
+      <!-- <div class="gym__styling-rectangle"></div> -->
+
+      <div class="pricing__wrapper">
+        <ul class="pricing__tabs">
+          <li class="pricing__tab active" js--tab="gym">
+            <h3 class="pricing__tab-titles">Gym Membership</h3>
+          </li>
+          <li class="pricing__tab" js--tab="pt">
+            <h3 class="pricing__tab-titles">PT ant Nutrition</h3>
+          </li>
+          <li class="pricing__tab" js--tab="massage">
+            <h3 class="pricing__tab-titles">Sports Massage</h3>
+          </li>
+        </ul>
+        <div class="pricing__tab-content-wrapper">
+          <div class="pricing__tab-content active" id="gym">
+            <div class="pricing__gym gym">
+              <!-- <h3 class="gym__title--sub-text">Daily</h3> -->
+
+              <div class="gym__card-day-pass pricing__card">
+                <div class="gym__day-pass--left">
+                  <p class="pricing-card gym__card-text--day">Day pass</p>
+                </div>
+                <div class="gym__day-pass--right">
+                  <p class="pricing-card gym__card-number--day">£5</p>
+                </div>
+              </div>
+              <h3 class="gym__title--sub-text">Subscription</h3>
+              <fieldset class="gym__radio-group">
+                <label for="one-month" class="radio-btn__label">
+                  <input
+                    type="radio"
+                    class="radio-btn__input"
+                    id="one-month"
+                    name="duration"
+                    value="one-month"
+                    checked
+                  />
+                  <span class="radio-btn__button"></span>
+                  1 Month
+                </label>
+                <!-- <label for="three-months" class="radio-btn__label">
+              <input
+                type="radio"
+                class="radio-btn__input"
+                id="three-months"
+                name="duration"
+                value="three-months"
+              />
+              <span class="radio-btn__button"></span>
+              3 Months
+            </label> -->
+                <label for="six-months" class="radio-btn__label">
+                  <input
+                    type="radio"
+                    class="radio-btn__input"
+                    id="six-months"
+                    name="duration"
+                    value="six-months"
+                  />
+                  <span class="radio-btn__button"></span>
+                  6 Months
+                </label>
+                <label for="twelve-months" class="radio-btn__label">
+                  <input
+                    type="radio"
+                    class="radio-btn__input"
+                    id="twelve-months"
+                    name="duration"
+                    value="twelve-months"
+                  />
+                  <span class="radio-btn__button"></span>
+                  12 Months
+                </label>
+              </fieldset>
+              <div class="gym__cards">
+                <div class="gym__card-subscription pricing__card gym__card--1">
+                  <div class="gym__card-subscription--left-side">
+                    <p class="gym__card-text">Off-peak</p>
+                    <p class="gym__card-text gym__card-text--time">
+                      Workdays 9am - 3pm
+                    </p>
+                  </div>
+                  <div class="gym__card-subscription--right-side">
+                    <p class="js--one-month gym__card-number">£15</p>
+                    <p
+                      class="js--three-months gym__card-number gym__card-number--hidden"
+                    >
+                      £39<span class="gym__card-monthly u--new-line"
+                        >£13/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--six-months gym__card-number gym__card-number--hidden"
+                    >
+                      £72<span class="gym__card-monthly u--new-line"
+                        >£12/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--twelve-months gym__card-number gym__card-number--hidden"
+                    >
+                      £120<span class="gym__card-monthly u--new-line"
+                        >£10/month</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="gym__card-subscription pricing__card gym__card--2">
+                  <div class="gym__card-subscription--left-side">
+                    <p class="gym__card-text">Regular</p>
+                    <p class="gym__card-text gym__card-text--time">
+                      Workdays 8am - 9pm<span
+                        class="gym__card-text--time u--new-line"
+                        >Weekends 9am - 1pm</span
+                      >
+                    </p>
+                  </div>
+                  <div class="gym__card-subscription--right-side">
+                    <p class="js--one-month gym__card-number">£25</p>
+                    <p
+                      class="js--three-months gym__card-number gym__card-number--hidden"
+                    >
+                      £69<span class="gym__card-monthly u--new-line"
+                        >£23/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--six-months gym__card-number gym__card-number--hidden"
+                    >
+                      £126<span class="gym__card-monthly u--new-line"
+                        >£21/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--twelve-months gym__card-number gym__card-number--hidden"
+                    >
+                      £228<span class="gym__card-monthly u--new-line"
+                        >£19/month</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="gym__card-subscription pricing__card gym__card--3">
+                  <div class="gym__card-subscription--left-side">
+                    <p class="pricing-card gym__card-text--24">24/7</p>
+                  </div>
+                  <div class="gym__card-subscription--right-side">
+                    <p class="js--one-month gym__card-number">£30</p>
+                    <p
+                      class="js--three-months gym__card-number gym__card-number--hidden"
+                    >
+                      £84<span class="gym__card-monthly u--new-line"
+                        >£28/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--six-months gym__card-number gym__card-number--hidden"
+                    >
+                      £156<span class="gym__card-monthly u--new-line"
+                        >£26/month</span
+                      >
+                    </p>
+                    <p
+                      class="js--twelve-months gym__card-number gym__card-number--hidden"
+                    >
+                      £288<span class="gym__card-monthly u--new-line"
+                        >£24/month</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__tab-content" id="pt">
+            <div class="pricing__pt pt">
+              <h4 class="pt__quaternary-title">
+                Discounts for Multiple PT Bookings!
+              </h4>
+
+              <div class="pt__cards">
+                <div class="pricing__card pt__card pt__card--1">
+                  <div class="pt__card--left">
+                    <p class="pricing-card pt__card-text">1-to-1 PT session</p>
+                  </div>
+                  <div class="pt__card--right">
+                    <p class="pricing-card pt__card-number">£45</p>
+                  </div>
+                </div>
+                <div class="pricing__card pt__card pt__card--2">
+                  <div class="pt__card--left">
+                    <p class="pricing-card pt__card-text">Group PT session</p>
+                  </div>
+                  <div class="pt__card--right">
+                    <p class="pricing-card pt__card-number">£75</p>
+                  </div>
+                </div>
+                <div class="pricing__card pt__card pt__card--3">
+                  <div class="pt__card--left">
+                    <p class="pricing-card pt__card-text">Nutrition Coaching</p>
+                  </div>
+                  <div class="pt__card--right">
+                    <p class="pricing-card pt__card-number">£35</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pricing__tab-content" id="massage">
+            <div class="pricing__massage massage">
+              <div class="massage__cards">
+                <div
+                  class="massage__card-subscription pricing__card massage__card"
+                >
+                  <div class="pt__card--left">
+                    <p class="pricing-card massage__card-text">
+                      Full body massage
+                    </p>
+                  </div>
+                  <div class="massage__card--right">
+                    <p class="pricing-card massage__card-number">£50</p>
+                  </div>
+                </div>
+                <div class="pricing__card massage__card">
+                  <div class="massage__card--left">
+                    <p class="pricing-card massage__card-text">
+                      Localized Sports Massage
+                    </p>
+                  </div>
+                  <div class="massage__card--right">
+                    <p class="pricing-card massage__card-number">£50</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3 class="contact__title main-header">Find us!</h3>
+      <div class="contact__wrapper">
+        <div class="contact__info">
+          <div class="contact__info--left">
+            <div class="contact__text">
+              <div class="contact__hour-address-wrapper">
+                <div class="contact__work-hours">
+                  <p>
+                    <span class="u--strong">Opening Hours:</span><br /><span
+                      class="u--medium"
+                      >Workdays:</span
+                    ><br />8am - 9pm<br /><span
+                      class="u--medium u--top-margin-small"
+                      >Weekends:</span
+                    >9am - 1pm
+                  </p>
+                </div>
+                <div class="contact__address">
+                  <p>
+                    <span class="u--strong">Address:</span><br />182 Batley Rd,
+                    Alverthorpe,<br />Wakefield WF2 0AJ
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact__phone-email-wrapper">
+                <div class="contact__phone">
+                  <p><span class="u--strong">Mobile:</span><br />07786684780</p>
+                </div>
+                <div class="contact__email">
+                  <p>
+                    <span class="u--strong">E-mail:</span
+                    ><br />louise.isobodzgym@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__info--right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2362.605559133351!2d-1.5338436227044518!3d53.689655048980036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48796725e0df8ebf%3A0xd52c1b068b866931!2sIsobodz%20Gym!5e0!3m2!1sen!2suk!4v1692636273806!5m2!1sen!2suk"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              alt="google-maps"
+              class="contact__map"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img
+            src="img/isobodz-324.jpg"
+            alt="PT and Nutrition"
+            class="footer__isobodz-logo"
+          />
+        </div>
+        <div class="footer__info">
+          <div class="footer__contact">
+            <p class="footer__contact-text">Mobile: 07786684780</p>
+            <p class="footer__contact-text">
+              E-mail: louise.isobodzgym@gmail.com
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="#about-us" class="footer__link">About Us</a>
+            <a href="#services" class="footer__link">Services</a>
+            <a href="#contact" class="footer__link">Find Us</a>
+          </div>
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/isobodzfitness/"
+              class="footer__facebook-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="footer__svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  class="footer__svg-path"
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/isobodz_gym/"
+              class="footer__instagram-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="footer__svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  class="footer__svg-path"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__builder">
+        Built by
+        <a
+          class="footer__builder-href"
+          href="http://k-satkus.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Kestutis Satkus</a
+        >
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

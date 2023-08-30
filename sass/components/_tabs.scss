@@ -1,0 +1,105 @@
+.pricing {
+  &__tabs {
+    font-size: 4rem;
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+
+    @include respond(1550) {
+      width: 90%;
+    }
+    @include respond(1400) {
+      width: 96.5%;
+    }
+    @include respond(700) {
+      width: 100%;
+    }
+  }
+
+  &__tab {
+    position: relative;
+    text-align: center;
+    width: 33.3333333%;
+    padding: 1rem 2rem;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba($color-orange-medium, 0.95);
+    // background-color: teal;
+    transition: all 0.2s ease-in;
+
+    &.active {
+      background-color: $color-orange-dark;
+      // background-color: greenyellow;
+      color: $color-black;
+      font-weight: 700;
+      transform: translateY(-8%);
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      background-color: $color-orange-dark;
+      width: 100%;
+      height: 108%;
+      transform: translateY(8%);
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transition: none;
+    }
+  }
+  &__tab-content-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 50rem; 
+    width: 80%;
+
+    @include respond(1550) {
+      width: 90%;
+    }
+
+    @include respond(1400) {
+      width: 96.5%;
+    }
+    @include respond(700) {
+      width: 100%;
+    }
+
+    @include respond(1800) {
+      min-height: 60rem;
+    }
+    @include respond(1200) {
+      min-height: 70rem;
+    }
+    @include respond(1000) {
+      min-height: 90rem;
+    }
+  }
+
+  &__tab-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5rem 3rem 5rem;
+    background-color: $color-orange-light;
+    box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%); // Initially move all content down
+    transition: transform 0.3s ease-in-out;
+
+    &.active {
+      transform: translateY(0); // Move active content to its original position
+      min-height: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @include respond(500) {
+      padding: 1rem 2rem 2rem 2rem;
+    }
+  }
+}
